@@ -1,0 +1,97 @@
+/* Annuler marges externes et internes de tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Conteneur : hauteur automatique */
+.container {
+  background-color: red;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/* Barre de navigation principale */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 110px;
+}
+
+/* Les deux menus : en ligne, sans puces */
+.main-menu,
+.right-menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+/* Le menu principal prend toute la largeur disponible, marge gauche de 20px */
+.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.right-menu {
+  margin-right: 20px;
+}
+
+/* Liens : noirs, sans soulignement, espace de 2px sous le texte */
+.main-nav a {
+  color: #262626;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+/* Au survol : bordure inférieure noire de 2px */
+.main-nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* Showcase */
+.showcase {
+  background-color: #CCCCCC;
+  width: 100%;
+  height: 60px;
+  border: 1px solid black;
+}
+
+/* Sections vertes (étape 3) */
+.home-cards,
+.ruban,
+.follow,
+.links,
+.sub-footer,
+#bigData-intro {
+  background-color: #d3eaac;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+footer {
+  width: 100%;
+}

@@ -1,0 +1,197 @@
+/* Annuler marges externes et internes de tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Conteneur : hauteur automatique */
+.container {
+  background-color: red;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/* Barre de navigation principale */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 110px;
+}
+
+.main-menu,
+.right-menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.right-menu {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  color: #262626;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* Showcase */
+.showcase {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  border: none;
+  background-image: url("../img/showcase.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 30%;
+  background-origin: content-box;
+  background-clip: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px 0;
+  margin-bottom: 20px;
+}
+
+.showcase h1,
+.showcase h2,
+.showcase h3,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+/* Bouton */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #378ff5;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.dark {
+  color: white;
+}
+
+.dark .btn {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Home-cards (sections #web et #bigData) : grille de 4 colonnes égales */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  width: auto;
+  border: none;
+}
+
+.home-cards img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.home-cards h3 {
+  margin-bottom: 5px;
+}
+
+.home-cards a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0067b8;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-cards a i {
+  transition: margin-left 0.3s;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+
+/* Section Big Data */
+#bigData-intro {
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/bigdata.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  padding-bottom: 100px;
+  border: none;
+}
+
+#bigData-intro .content {
+  width: 40%;
+  color: #262626;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+#bigData-intro p {
+  margin: 10px 0 20px;
+}
+
+/* Sections vertes restantes */
+.ruban,
+.follow,
+.links,
+.sub-footer {
+  background-color: #d3eaac;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+footer {
+  width: 100%;
+}
